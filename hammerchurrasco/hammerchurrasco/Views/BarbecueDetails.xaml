@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Detalhes do Churrasco"
+             x:Class="hammerchurrasco.Views.BarbecueDetails">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="0,25,0,0" HorizontalOptions="CenterAndExpand">
+                <Image Source="event"/>
+            </StackLayout>
+            <Frame CornerRadius="10" Margin="20,10,20,0" Padding="4" HeightRequest="250">
+                <StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Image Source="hammer" VerticalOptions="Start" HorizontalOptions="Start" WidthRequest="40" HeightRequest="40"/>
+                    <Label Text="Churrasco Hammer - 2021" TextColor="Black" FontSize="18" FontAttributes="Bold" Margin="0,5,0,0"/>
+                </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,20,0,0" HorizontalOptions="CenterAndExpand">
+                        <Label Text="Data do Evento:" Margin="0,15,0,0" FontSize="Small" TextColor="Black" FontAttributes="Bold"/>
+                        <Image Source="event" WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" />
+                        <DatePicker IsEnabled="False"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <ImageButton x:Name="btnPerson" Source="person" BackgroundColor="Maroon" Padding="8" CornerRadius="30" WidthRequest="60" HeightRequest="60" />
+                        <ImageButton x:Name="btnTotal"  Source="total" Margin="20,0,0,0" Padding="10" BackgroundColor="Maroon" CornerRadius="30" WidthRequest="60" HeightRequest="60"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="6" Margin="0,10,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="Participantes" TextColor="Black" FontSize="12" Margin="70,-25,0,0" />
+                        <Label Text="Totais" TextColor="Black" FontSize="12" Margin="30,-25,0,0" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

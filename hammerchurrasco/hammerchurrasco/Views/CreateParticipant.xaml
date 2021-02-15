@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="hammerchurrasco.Views.CreateParticipant">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout BackgroundColor="White">
+            <StackLayout>
+                <Image Source="hammer"/>
+                <StackLayout x:Name="stkEmployee" IsVisible="True">
+                <Frame CornerRadius="10" BorderColor="Maroon" Margin="15,0,15,0" HeightRequest="200" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <StackLayout VerticalOptions="StartAndExpand">
+                        <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                            <Image Source="person" BackgroundColor="Black" WidthRequest="20" HeightRequest="20"/>
+                            <Entry x:Name="entryName" Text="{Binding Name}"  Placeholder="Digite seu nome" WidthRequest="300"/>
+                        </StackLayout>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                                <Image Source="delete" WidthRequest="20" HeightRequest="20"/>
+                                <Entry x:Name="entrSurname" Text="{Binding Surname}" Placeholder="Digite seu sobrenome" WidthRequest="300"/>
+                            </StackLayout>
+                            <Picker BindingContext="{Binding Gender}" x:Name="pickerGender"  Title="Sexo:">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Masculino</x:String>
+                                        <x:String>Feminino</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                            <StackLayout x:Name="stkguest"  Orientation="Horizontal">
+                                <Label Text="Tem convidado ?"/>
+                                <Switch x:Name="swiGuestConvide"  IsToggled="False"/>
+                                <StackLayout x:Name="stkDrink" Orientation="Horizontal">
+                                    <Label Text="Bebe?"/>
+                                    <Switch x:Name="swiEmployee" IsToggled="False"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                    </StackLayout>
+
+                <StackLayout x:Name="stkGuest" IsVisible="False">
+                    <Frame CornerRadius="10" BorderColor="Maroon" Margin="15,0,15,0" HeightRequest="200" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                        <StackLayout VerticalOptions="StartAndExpand">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                                <Image Source="person" BackgroundColor="Black" WidthRequest="20" HeightRequest="20"/>
+                                <Entry x:Name="entryNameGuest"  Placeholder="Digite seu nome" WidthRequest="300"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                                <Image Source="delete" WidthRequest="20" HeightRequest="20"/>
+                                <Entry x:Name="entrSurnameGuest" Placeholder="Digite seu sobrenome" WidthRequest="300"/>
+                            </StackLayout>
+                            <Picker x:Name="pickerGenderGuest"  Title="Sexo:">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Masculino</x:String>
+                                        <x:String>Feminino</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                            <StackLayout x:Name="stkDrinkGuest" Orientation="Horizontal">
+                                <Label Text="Bebe?"/>
+                                <Switch x:Name="swiGuest" BackgroundColor="Maroon" IsToggled="False"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                
+            </StackLayout>
+                <Button x:Name="btnSave"  BackgroundColor="Maroon" Margin="15,0,15,0" CornerRadius="10" Text="Salvar Participantes" TextColor="White" Padding="6" Clicked="btnSave_Clicked" />
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

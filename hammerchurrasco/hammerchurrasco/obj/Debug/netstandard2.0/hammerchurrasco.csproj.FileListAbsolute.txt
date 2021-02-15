@@ -1,0 +1,17 @@
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\bin\Debug\netstandard2.0\hammerchurrasco.deps.json
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\bin\Debug\netstandard2.0\hammerchurrasco.dll
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\bin\Debug\netstandard2.0\ref\hammerchurrasco.dll
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\bin\Debug\netstandard2.0\hammerchurrasco.pdb
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\hammerchurrasco.AssemblyInfoInputs.cache
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\hammerchurrasco.AssemblyInfo.cs
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\hammerchurrasco.dll
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\ref\hammerchurrasco.dll
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\hammerchurrasco.pdb
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\Views\BarbecueDetails.xaml.g.cs
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\Views\Participants.xaml.g.cs
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\Views\CreateParticipant.xaml.g.cs
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\hammerchurrasco.csproj.CoreCompileInputs.cache
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\XamlC.stamp
+C:\HammerChurrasco\hammerchurrasco\hammerchurrasco\hammerchurrasco\obj\Debug\netstandard2.0\hammerchurrasco.csprojAssemblyReference.cache

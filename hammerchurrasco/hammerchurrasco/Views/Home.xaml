@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="hammerchurrasco.Home">
+
+    <StackLayout BackgroundColor="#F0E4E4">
+        <StackLayout>
+            <Image Source="logo" WidthRequest="250"/>
+            <Frame BackgroundColor="Beige" BorderColor="#707070" CornerRadius="8" Margin="15,0,15,0">
+                <Label Text="Controle de Churrasco Hammer - 2021" TextColor="IndianRed" FontSize="16" FontAttributes="Bold" HeightRequest="80" HorizontalTextAlignment="Center"/>
+            </Frame>
+            <Frame BackgroundColor="WhiteSmoke" HeightRequest="150" BorderColor="#707070"  Margin="15,-70,15,0">
+                <StackLayout>
+                    <Label Text=" Todo ano a Hammer faz um churrasco, entre seus colaboradores. Celebrando mais um ano de espirito de equipe, de trabalho e dedicação, visando sempre o crescimento da empresa." Margin="10,0,0,0"  TextColor="Black" FontSize="16"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <Button x:Name="btnConsult"  Text="Consultar Participantes" TextColor="White" CornerRadius="10" Margin="30,0,30,0" BackgroundColor="Maroon" Clicked="btnConsult_Clicked" />
+        <Button x:Name="btnCadastro"  Text="Cadastrar Participantes" TextColor="White" BackgroundColor="Tomato" CornerRadius="10" Margin="30,0,30,0" Clicked="btnCadastro_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

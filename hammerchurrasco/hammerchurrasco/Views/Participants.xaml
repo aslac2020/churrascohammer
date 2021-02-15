@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:hammerchurrasco.ViewModels"
+             mc:Ignorable="d"
+             Title="Lista de Participantes"
+             x:Class="hammerchurrasco.Views.Participants">
+    <ContentPage.BindingContext>
+        <local:BaseBarbecueViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout  HorizontalOptions="CenterAndExpand">
+                    <Image Source="hammer" WidthRequest="150" HeightRequest="150"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <Frame CornerRadius="5" Margin="20,0,20,0" HeightRequest="300">
+                        <!--<StackLayout VerticalOptions="StartAndExpand">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                                <Image Source="person" BackgroundColor="Black" WidthRequest="20" HeightRequest="20"/>
+                                <Entry x:Name="entryName"  WidthRequest="300"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                                <Image Source="delete" WidthRequest="20" HeightRequest="20"/>
+                                <Entry x:Name="entrSurname"  WidthRequest="300"/>
+                            </StackLayout>
+                            <Entry x:Name="entrSexo" WidthRequest="300"/>-->
+                        <FlexLayout Direction="Column">
+                            <ListView x:Name="lstParticipants" ItemsSource="{Binding Participants}" HorizontalScrollBarVisibility="Never" RowHeight="130" SeparatorColor="Black">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <StackLayout>
+                                                <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+                                                    <Image Source="person" VerticalOptions="Start" HorizontalOptions="Start"/>
+                                                    <Label x:Name="lblName" TextColor="Black" FontSize="Medium" Text="{Binding Name}" HorizontalOptions="Center"/>
+                                                </StackLayout>
+                                                <StackLayout HorizontalOptions="EndAndExpand" Orientation="Horizontal">
+                                                    <Label x:Name="lblSurname" Text="{Binding Surname}"
+                                                    FontSize="Medium" 
+                                                    WidthRequest="170" />
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+
+                            </ListView>
+                        </FlexLayout>
+                    </Frame>
+                </StackLayout>
+                <Button  BackgroundColor="Maroon" Padding="6" TextColor="White" CornerRadius="10" Margin="10,-20,10,0" x:Name="btnCadastro"  Text="Cadastrar novo Participante" Clicked="btnCadastro_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
